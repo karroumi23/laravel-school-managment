@@ -1,11 +1,13 @@
-import { useState } from 'react'
 import './App.css'
+import { Router, RouterProvider } from 'react-router-dom'
+import { router } from './router'
 
 function App() {
 
   return (
     <>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae mollitia vero doloremque unde sapiente, officia sequi voluptas, nesciunt quaerat asperiores temporibus sed repellendus. Dolores blanditiis nesciunt porro dolorem ab dolore?</p>
+    <RouterProvider router={router}/>
+    <h1>test from app.jsx</h1>
     </>
   )
 }
